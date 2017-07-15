@@ -1,0 +1,25 @@
+#+TITLE: Fortune Screenshots like a boss
+#+DATE: Tuesday, Jul 11 2017
+#+DESCRIPTION: a utility that helps me caputre a screen and tweet it quick
+
+* motive:
+
+  quick tweet the fortune from the terminal, who else would do it.
+  cowsays: ME MEow
+
+* how to ?
+  run ~./main.sh~, but first get the deps right.
+  - if you wan't to send custom msg: use this env: export TWEET_MSG="मेरो custom msg <= twitter char limit"
+
+* Assumptions:
+  - you know how to create app in [[apps.twitter.com][twitter]].
+  - you have these:
+    - ffmpeg to take photo #I know you have it already
+    - twurl to talk to twitter's API 1.1 lol #easiest to configure and use
+
+
+* disclaimers
+   - please no questions of why, how, where types
+   - but you need ruby, yes doesn't matter if you don't use it. no offences
+   - improvements welcome
+
