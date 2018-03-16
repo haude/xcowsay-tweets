@@ -1,5 +1,18 @@
 #!/bin/bash
 
+
+################################################################################
+#                        xcowtweets, v-23.02.2018
+################################################################################
+## dependencies:
+#   twurl: https://github.com/twitter/twurl;
+#### gem install twurl
+#
+#   import: from Imagemagick https://github.com/ImageMagick/ImageMagick
+#   xcowsay: to view the tweet img; you can use any
+################################################################################
+
+
 # set -xv # verbose them all
 export CAPTURE_TMP_FILE_NAME=$(mktemp -u)
 export DATE_SIGNATURE=$(date +%Y%m%d-%H:%M:%S)
@@ -10,7 +23,7 @@ capture(){
 }
 
 compose(){
-    DEFAULT_MSG="#frotuneoftheday"
+    DEFAULT_MSG="#fortuneoftheday"
     [ -z "$TWEET_MSG" ] && TWEET_MSG=$DEFAULT_MSG
     export TWEET_MSG
 }
